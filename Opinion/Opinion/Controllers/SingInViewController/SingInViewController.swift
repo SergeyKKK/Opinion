@@ -22,8 +22,7 @@ final class SingInViewController: UIViewController {
         super.viewDidLoad()
         
         setupExitOrRegistrationButton(exitOrRegistrationButton)
-        setupShowRoolsButton(showRoolsButton,
-                             topButton: exitOrRegistrationButton)
+        setupShowRoolsButton(showRoolsButton)
         
     }
     
@@ -43,9 +42,9 @@ final class SingInViewController: UIViewController {
         
     }
     
-    private func setupShowRoolsButton(_ button: UIButton, topButton: UIButton) {
+    private func setupShowRoolsButton(_ button: UIButton) {
         view.addSubview(button)
-        singInView.createShowRoolsButton(button, topButton: topButton)
+        singInView.createShowRoolsButton(button)
         
     }
 }

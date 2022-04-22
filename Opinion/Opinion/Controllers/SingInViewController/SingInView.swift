@@ -20,12 +20,13 @@ class SingInView {
         }
     }
     
-    func createShowRoolsButton(_ button: UIButton, topButton: UIButton) {
+    func createShowRoolsButton(_ button: UIButton) {
         button.setTitle("Правила", for: .normal)
+        button.setTitleColor(.lightGray, for: .normal)
         button.snp.makeConstraints { make in
-            make.top.equalTo(topButton.snp.bottom).offset(20)
+            make.bottom.equalTo(-50)
             make.centerX.equalToSuperview()
-            make.height.equalTo(30)
+            make.height.equalTo(10)
         }
     }
 }
