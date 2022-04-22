@@ -8,6 +8,7 @@ target 'Opinion' do
   # Pods for Opinion
 
 pod 'ConfettiView-NSHipster'
+pod 'SnapKit'
 
   target 'OpinionTests' do
     inherit! :search_paths
