@@ -15,4 +15,17 @@ extension UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
+    
+    func setGradientBackground(redTop: CGFloat, greenTop: CGFloat, blueTop: CGFloat, alphaTop: CGFloat,
+                               redBottom: CGFloat, greenBottom: CGFloat, blueBottom: CGFloat, alphaBottom: CGFloat) {
+        let colorTop =  UIColor(red: redTop, green: greenTop, blue: blueTop, alpha: alphaTop).cgColor
+        let colorBottom = UIColor(red: redBottom, green: greenBottom, blue: blueBottom, alpha: alphaBottom).cgColor
+                    
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.view.bounds
+                
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+    }
 }
