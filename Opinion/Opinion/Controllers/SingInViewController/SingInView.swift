@@ -12,21 +12,21 @@ class SingInView {
     
     static let shared = SingInView()
 
-    func createExitOrRegistrationButton(_ button: UIButton) {
-        button.setTitle("Вход/Регистрация", for: .normal)
-        button.snp.makeConstraints { make in
+    func createExitOrRegistrationButton(_ exitOrRegistrationButton: UIButton) {
+        exitOrRegistrationButton.setTitle("Вход/Регистрация", for: .normal)
+        exitOrRegistrationButton.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.height.equalTo(30)
         }
     }
     
-    func createShowRoolsButton(_ button: UIButton) {
-        button.setTitle("Правила", for: .normal)
-        button.setTitleColor(.lightGray, for: .normal)
-        button.snp.makeConstraints { make in
+    func createShowRoolsButton(_ showRoolsButton: UIButton) {
+        showRoolsButton.setTitle("Правила", for: .normal)
+        showRoolsButton.setTitleColor(.lightGray, for: .normal)
+        showRoolsButton.snp.makeConstraints { make in
             make.bottom.equalTo(-50)
             make.centerX.equalToSuperview()
-            make.height.equalTo(10)
+            make.height.equalTo(50)
         }
     }
 }
