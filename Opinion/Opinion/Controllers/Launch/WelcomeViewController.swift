@@ -8,15 +8,21 @@
 import UIKit
 import ConfettiView
 
-class WelcomeViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
+    
+    //MARK: - Properties
     
     private lazy var confettiView = ConfettiView()
+    
+    //MARK: - Life circle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         createConfettiView(confettiView)
     }
+    
+    //MARK: - Private methods
     
     private func createConfettiView(_ confetti: ConfettiView) {
         confetti.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)

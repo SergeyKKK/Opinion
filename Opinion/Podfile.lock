@@ -1,16 +1,20 @@
 PODS:
   - ConfettiView-NSHipster (0.3.1)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - ConfettiView-NSHipster
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - ConfettiView-NSHipster
+    - SnapKit
 
 SPEC CHECKSUMS:
   ConfettiView-NSHipster: dd3f241dc342250ee37e0fc07e6d1adb6695eb0b
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 9259924f45d7fa6ff46f56e3c24972563a089d18
+PODFILE CHECKSUM: 608d65263b69d95322e5c6648e0d1cd00906f6d4
 
 COCOAPODS: 1.11.3
