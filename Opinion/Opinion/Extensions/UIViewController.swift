@@ -9,6 +9,7 @@ import UIKit
 
 extension UIViewController {
     
+    /// show error alert
     func showErrorAlert(text: String) {
         let alert = UIAlertController(title: nil, message: text, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default) { (action) in }
@@ -16,6 +17,7 @@ extension UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    ///set gradien backgroung color    
     func setGradientBackground(redTop: CGFloat, greenTop: CGFloat, blueTop: CGFloat, alphaTop: CGFloat,
                                redBottom: CGFloat, greenBottom: CGFloat, blueBottom: CGFloat, alphaBottom: CGFloat) {
         let colorTop =  UIColor(red: redTop, green: greenTop, blue: blueTop, alpha: alphaTop).cgColor
@@ -29,3 +31,4 @@ extension UIViewController {
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
 }
+

@@ -15,7 +15,7 @@ final class WelcomeViewController: UIViewController {
     private lazy var confettiView = ConfettiView()
     
     //MARK: - Life circle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -10,8 +10,12 @@ import SnapKit
 
 class SingInView {
     
+    //MARK: - Public properties
+    
     static let shared = SingInView()
-
+    
+    //MARK: - setup UI
+    
     func createExitOrRegistrationButton(_ exitOrRegistrationButton: UIButton) {
         exitOrRegistrationButton.setTitle("Вход/Регистрация", for: .normal)
         exitOrRegistrationButton.snp.makeConstraints { make in

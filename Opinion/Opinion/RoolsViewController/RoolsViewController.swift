@@ -15,7 +15,7 @@ class RoolsViewController: UIViewController {
     
     private lazy var titleLabel = UILabel()
     private lazy var roolsTextView = UITextView()
-
+    
     //MARK: - Life circle
     
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class RoolsViewController: UIViewController {
         setupRoolsTextView(roolsTextView)
         
         setupUI()
-
+        
     }
     
     //MARK: - Private methods
