@@ -45,6 +45,11 @@ final class SingInViewController: UIViewController {
     private func setupShowRoolsButton(_ button: UIButton) {
         view.addSubview(button)
         singInView.createShowRoolsButton(button)
-        
+        button.addTarget(self, action: #selector(openRoolsView), for: .touchUpInside)
+    }
+    
+    @objc private func openRoolsView() {
+        let roolsViewController = RoolsViewController()
+        present(roolsViewController, animated: true)
     }
 }
