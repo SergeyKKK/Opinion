@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = welcomeViewController
+        window?.overrideUserInterfaceStyle = .light
         window?.makeKeyAndVisible()
         
         return true
