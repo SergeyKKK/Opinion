@@ -20,6 +20,7 @@
 		0CE160CE2812C96E000DAA1D /* OpinionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE160CD2812C96E000DAA1D /* OpinionTests.swift */; };
 		0CE160D82812C96E000DAA1D /* OpinionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE160D72812C96E000DAA1D /* OpinionUITests.swift */; };
 		0CE160DA2812C96E000DAA1D /* OpinionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE160D92812C96E000DAA1D /* OpinionUITestsLaunchTests.swift */; };
+		0CFA45F92815EEB600101854 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFA45F82815EEB600101854 /* WelcomeView.swift */; };
 		19D6CD446071B592F1FA2234 /* Pods_OpinionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3363B0A738411537B46EFAEB /* Pods_OpinionTests.framework */; };
 		2BEC2E5795B5FEE687481C4D /* Pods_Opinion_OpinionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4080B18F5C703FA92995FF7B /* Pods_Opinion_OpinionUITests.framework */; };
 		96465AB230D4796799F2AE21 /* Pods_Opinion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6F4814BA8FD7F9EFF6BED0 /* Pods_Opinion.framework */; };
@@ -60,6 +61,7 @@
 		0CE160D32812C96E000DAA1D /* OpinionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpinionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE160D72812C96E000DAA1D /* OpinionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionUITests.swift; sourceTree = "<group>"; };
 		0CE160D92812C96E000DAA1D /* OpinionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0CFA45F82815EEB600101854 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		0E400FA432F763D0B9505BF5 /* Pods-OpinionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpinionTests.debug.xcconfig"; path = "Target Support Files/Pods-OpinionTests/Pods-OpinionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		11A2BAA1EB87158C8DCB2D38 /* Pods-Opinion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Opinion.release.xcconfig"; path = "Target Support Files/Pods-Opinion/Pods-Opinion.release.xcconfig"; sourceTree = "<group>"; };
 		18A2DCC0F8F4CF83602F8ED4 /* Pods-Opinion-OpinionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Opinion-OpinionUITests.debug.xcconfig"; path = "Target Support Files/Pods-Opinion-OpinionUITests/Pods-Opinion-OpinionUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				0CE160C12812C96E000DAA1D /* LaunchScreen.storyboard */,
-				0CE160BA2812C96A000DAA1D /* WelcomeViewController.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -207,9 +208,19 @@
 			isa = PBXGroup;
 			children = (
 				0CE160E72812CAD8000DAA1D /* Launch */,
+				0CFA45F72815EE9700101854 /* WelcomeViewController */,
 				0CDBEF812812D98D002899B3 /* SingInViewController */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0CFA45F72815EE9700101854 /* WelcomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CE160BA2812C96A000DAA1D /* WelcomeViewController.swift */,
+				0CFA45F82815EEB600101854 /* WelcomeView.swift */,
+			);
+			path = WelcomeViewController;
 			sourceTree = "<group>";
 		};
 		94E6C80A44E60D5A1FB88AD4 /* Pods */ = {
@@ -477,6 +488,7 @@
 				0CE160BB2812C96A000DAA1D /* WelcomeViewController.swift in Sources */,
 				0C2FDF6E28133C6C00B96A22 /* RoolsView.swift in Sources */,
 				0CDBEF892812DAC8002899B3 /* UIViewController.swift in Sources */,
+				0CFA45F92815EEB600101854 /* WelcomeView.swift in Sources */,
 				0C2FDF692812F30E00B96A22 /* SingInView.swift in Sources */,
 				0C2FDF6C28133C5F00B96A22 /* RoolsViewController.swift in Sources */,
 				0C019F682813D8E400454DF3 /* String.swift in Sources */,
@@ -654,6 +666,8 @@
 				INFOPLIST_FILE = Opinion/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -681,6 +695,8 @@
 				INFOPLIST_FILE = Opinion/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

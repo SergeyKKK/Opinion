@@ -39,7 +39,6 @@ final class SingInViewController: UIViewController {
     private func setupExitOrRegistrationButton(_ button: UIButton) {
         view.addSubview(button)
         singInView.createExitOrRegistrationButton(button)
-        
     }
     
     private func setupShowRoolsButton(_ button: UIButton) {

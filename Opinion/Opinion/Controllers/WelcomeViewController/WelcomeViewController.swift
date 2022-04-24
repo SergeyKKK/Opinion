@@ -12,26 +12,25 @@ final class WelcomeViewController: UIViewController {
     
     //MARK: - Properties
     
+    private let welcomeView = WelcomeView.shared
+    
     private lazy var confettiView = ConfettiView()
+    private lazy var launchImageView = UIImageView()
     
     //MARK: - Life circle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createConfettiView(confettiView)
+        setupConfettiView(confettiView)
+        setupLaunchImage(launchImageView)
     }
     
     //MARK: - Private methods
     
-    private func createConfettiView(_ confetti: ConfettiView) {
-        confetti.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
-        confetti.center = view.center
-        view.addSubview(confetti)
-        setupConfettiView(confetti)
-    }
-    
     private func setupConfettiView(_ confetti: ConfettiView) {
+        launchImageView.addSubview(confetti)
+        welcomeView.createConfettiView(confetti, view: view)
         confetti.emit(with: [
             .shape(.circle, .purple),
             .shape(.triangle, .lightGray),
@@ -41,6 +40,12 @@ final class WelcomeViewController: UIViewController {
             singinViewController.modalPresentationStyle = .fullScreen
             self.present(singinViewController, animated: true)
         }
+    }
+    
+    private func setupLaunchImage(_ imageView: UIImageView) {
+        imageView.image = UIImage(named: "Launch")
+        view.addSubview(imageView)
+        welcomeView.createLaunchImage(imageView, view: view)
     }
 }
 
