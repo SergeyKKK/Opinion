@@ -13,7 +13,7 @@ final class SingInViewController: UIViewController {
     
     private let singInView = SingInView.shared
     
-    private lazy var exitOrRegistrationButton = UIButton()
+    private lazy var entranceButton = UIButton()
     private lazy var showRoolsButton = UIButton()
     
     //MARK: - Life circle
@@ -21,7 +21,7 @@ final class SingInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupExitOrRegistrationButton(exitOrRegistrationButton)
+        setupEntranceButton(entranceButton)
         setupShowRoolsButton(showRoolsButton)
         
     }
@@ -36,9 +36,10 @@ final class SingInViewController: UIViewController {
     
     //MARK: - Private methods
     
-    private func setupExitOrRegistrationButton(_ button: UIButton) {
+    private func setupEntranceButton(_ button: UIButton) {
         view.addSubview(button)
-        singInView.createExitOrRegistrationButton(button)
+        singInView.createEntranceButton(button)
+        button.addTarget(self, action: #selector(openEnteranceView), for: .touchUpInside)
     }
     
     private func setupShowRoolsButton(_ button: UIButton) {
@@ -50,6 +51,12 @@ final class SingInViewController: UIViewController {
     @objc private func openRoolsView() {
         let roolsViewController = RoolsViewController()
         present(roolsViewController, animated: true)
+    }
+    
+    @objc private func openEnteranceView() {
+        let entranceViewController = EntranceViewController()
+        entranceViewController.modalPresentationStyle = .fullScreen
+        present(entranceViewController, animated: true)
     }
 }
 

@@ -16,9 +16,9 @@ class SingInView {
     
     //MARK: - setup UI
     
-    func createExitOrRegistrationButton(_ exitOrRegistrationButton: UIButton) {
-        exitOrRegistrationButton.setTitle("Вход/Регистрация", for: .normal)
-        exitOrRegistrationButton.snp.makeConstraints { make in
+    func createEntranceButton(_ entranceButton: UIButton) {
+        entranceButton.setTitle("Вход", for: .normal)
+        entranceButton.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.height.equalTo(30)
         }

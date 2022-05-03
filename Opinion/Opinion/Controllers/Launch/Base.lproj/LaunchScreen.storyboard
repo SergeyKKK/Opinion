@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,17 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="mSc-lK-YsK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="RBt-3K-Frs">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mSc-lK-YsK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="05D-CB-rkA"/>
-                            <constraint firstItem="mSc-lK-YsK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1z0-13-phi"/>
-                            <constraint firstAttribute="bottom" secondItem="mSc-lK-YsK" secondAttribute="bottom" id="phz-zb-OF2"/>
-                            <constraint firstItem="mSc-lK-YsK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ute-hi-Nc4"/>
+                            <constraint firstItem="RBt-3K-Frs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D4n-Ob-SsC"/>
+                            <constraint firstItem="RBt-3K-Frs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FoF-3o-Upi"/>
+                            <constraint firstItem="RBt-3K-Frs" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aIc-o3-WAh"/>
+                            <constraint firstAttribute="bottom" secondItem="RBt-3K-Frs" secondAttribute="bottom" id="mxh-fi-lBS"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,7 +38,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch" width="828" height="1629"/>
+        <image name="Launch" width="2048" height="3731"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
