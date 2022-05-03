@@ -8,22 +8,32 @@
 import UIKit
 
 class EntranceViewController: UIViewController {
-
+    
+    //все сделано временно, дальше функционал будет дорабатываться
+    
+    //MARK: - Properties
+    
+    private lazy var button = UIButton()
+    
+    //MARK: - Life circle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        
+        button.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        button.center = view.center
+        button.backgroundColor = .yellow
+        button.setTitle("переход на экран поиска", for: .normal)
+        button.addTarget(self, action: #selector(openSearch), for: .touchUpInside)
+        view.addSubview(button)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - Private methods
+    
+    @objc private func openSearch() {
+        
     }
-    */
-
+    
 }

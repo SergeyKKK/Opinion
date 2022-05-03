@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import SnapKit
+
+final class EntranceView {
+    
+    //MARK: - Public properties
+    
+    static let shared = EntranceView()
+    
+    //MARK: - setup UI
+}
