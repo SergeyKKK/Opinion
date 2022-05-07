@@ -36,8 +36,6 @@ class EntranceViewController: UIViewController {
     @objc private func openSearch() {
         let searchAccountsController = SearchAccountsViewController()
         navigationController?.pushViewController(searchAccountsController, animated: true)
-//        searchAccountsController.modalPresentationStyle = .fullScreen
-//        present(searchAccountsController, animated: true, completion: nil)
 
     }
     

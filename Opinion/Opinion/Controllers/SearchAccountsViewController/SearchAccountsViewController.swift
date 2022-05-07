@@ -12,28 +12,27 @@ class SearchAccountsViewController: UIViewController {
     //MARK: - Properties
     
     private let searchView = SearchAccountsView.shared
-    let identefire = "my cell"
     
-    private lazy var accountsTable = UITableView()
-    private lazy var searchBar = UISearchController()
+    private lazy var accountsTableView = UITableView()
+    private lazy var searchAccountsController = UISearchController()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpSearchTable(accountsTable)
+        setUpAccountTable(accountsTableView)
         createNavControll()
     }
     
     //MARK: - Private methods
     
     private func createNavControll() {
-        searchView.createNavControll(self, searchBar: searchBar)
+        searchView.createNavControll(self, searchBar: searchAccountsController)
         
     }
     
-    private func setUpSearchTable(_ table: UITableView) {
+    private func setUpAccountTable(_ table: UITableView) {
         view.addSubview(table)
-        table.register(AccountCell.self, forCellReuseIdentifier: identefire)
+        table.register(AccountCell.self, forCellReuseIdentifier: AccountCell().identefireCell)
         table.dataSource = self
         table.delegate = self
         searchView.createAccountsTable(table)
@@ -49,7 +48,7 @@ extension SearchAccountsViewController: UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: identefire, for: indexPath) as? AccountCell{
+        if let cell = tableView.dequeueReusableCell(withIdentifier: AccountCell().identefireCell, for: indexPath) as? AccountCell{
             cell.createAccountCell()
             return cell
         }

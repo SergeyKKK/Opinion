@@ -9,6 +9,8 @@ import UIKit
 
 class AccountCell: UITableViewCell {
     
+    let identefireCell = "accountCell"
+    
     private lazy var nameAccountLabel = UILabel()
     
     func createAccountCell() {
