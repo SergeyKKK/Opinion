@@ -19,6 +19,7 @@ class EntranceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
 
         view.backgroundColor = .white
         
@@ -33,7 +34,11 @@ class EntranceViewController: UIViewController {
     //MARK: - Private methods
     
     @objc private func openSearch() {
-        
+        let searchAccountsController = SearchAccountsViewController()
+        navigationController?.pushViewController(searchAccountsController, animated: true)
+//        searchAccountsController.modalPresentationStyle = .fullScreen
+//        present(searchAccountsController, animated: true, completion: nil)
+
     }
     
 }

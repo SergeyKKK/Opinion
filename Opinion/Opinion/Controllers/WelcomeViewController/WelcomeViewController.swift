@@ -10,6 +10,7 @@ import ConfettiView
 
 final class WelcomeViewController: UIViewController {
     
+    
     //MARK: - Properties
     
     private let welcomeView = WelcomeView.shared
@@ -21,6 +22,7 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         
         setupConfettiView(confettiView)
         setupLaunchImage(launchImageView)
@@ -37,8 +39,7 @@ final class WelcomeViewController: UIViewController {
             .shape(.square, .systemPink)
         ]) { _ in
             let singinViewController = SingInViewController()
-            singinViewController.modalPresentationStyle = .fullScreen
-            self.present(singinViewController, animated: true)
+            self.navigationController?.pushViewController(singinViewController, animated: true)
         }
     }
     

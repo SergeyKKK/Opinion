@@ -26,6 +26,9 @@
 		19D6CD446071B592F1FA2234 /* Pods_OpinionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3363B0A738411537B46EFAEB /* Pods_OpinionTests.framework */; };
 		2BEC2E5795B5FEE687481C4D /* Pods_Opinion_OpinionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4080B18F5C703FA92995FF7B /* Pods_Opinion_OpinionUITests.framework */; };
 		96465AB230D4796799F2AE21 /* Pods_Opinion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6F4814BA8FD7F9EFF6BED0 /* Pods_Opinion.framework */; };
+		D510331628245F0D00CF99AA /* SearchAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D510331528245F0D00CF99AA /* SearchAccountsViewController.swift */; };
+		D51033192824608500CF99AA /* SearchAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51033182824608500CF99AA /* SearchAccountsView.swift */; };
+		D510331F28270B7200CF99AA /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D510331E28270B7200CF99AA /* AccountCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		4080B18F5C703FA92995FF7B /* Pods_Opinion_OpinionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Opinion_OpinionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C245C4940588D6D64005C9C /* Pods-Opinion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Opinion.debug.xcconfig"; path = "Target Support Files/Pods-Opinion/Pods-Opinion.debug.xcconfig"; sourceTree = "<group>"; };
 		9E6F4814BA8FD7F9EFF6BED0 /* Pods_Opinion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Opinion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D510331528245F0D00CF99AA /* SearchAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAccountsViewController.swift; sourceTree = "<group>"; };
+		D51033182824608500CF99AA /* SearchAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAccountsView.swift; sourceTree = "<group>"; };
+		D510331E28270B7200CF99AA /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		EA1F3EDAEADF10D889DCF5CC /* Pods-Opinion-OpinionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Opinion-OpinionUITests.release.xcconfig"; path = "Target Support Files/Pods-Opinion-OpinionUITests/Pods-Opinion-OpinionUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +216,7 @@
 		0CE160E92812CAF3000DAA1D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D51033172824603D00CF99AA /* SearchAccountsViewController */,
 				0CE160E72812CAD8000DAA1D /* Launch */,
 				0CFA45F72815EE9700101854 /* WelcomeViewController */,
 				0CDBEF812812D98D002899B3 /* SingInViewController */,
@@ -258,6 +265,24 @@
 				3363B0A738411537B46EFAEB /* Pods_OpinionTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D51033172824603D00CF99AA /* SearchAccountsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D510331528245F0D00CF99AA /* SearchAccountsViewController.swift */,
+				D51033182824608500CF99AA /* SearchAccountsView.swift */,
+				D510332028270E2700CF99AA /* Cells */,
+			);
+			path = SearchAccountsViewController;
+			sourceTree = "<group>";
+		};
+		D510332028270E2700CF99AA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D510331E28270B7200CF99AA /* AccountCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,11 +529,14 @@
 				0CDBEF892812DAC8002899B3 /* UIViewController.swift in Sources */,
 				0CFA45FC2816AC4900101854 /* EntranceViewController.swift in Sources */,
 				0CFA45F92815EEB600101854 /* WelcomeView.swift in Sources */,
+				D510331628245F0D00CF99AA /* SearchAccountsViewController.swift in Sources */,
 				0CFA45FE2816AC6000101854 /* EntranceView.swift in Sources */,
 				0C2FDF692812F30E00B96A22 /* SingInView.swift in Sources */,
 				0C2FDF6C28133C5F00B96A22 /* RoolsViewController.swift in Sources */,
 				0C019F682813D8E400454DF3 /* String.swift in Sources */,
+				D51033192824608500CF99AA /* SearchAccountsView.swift in Sources */,
 				0CE160B72812C96A000DAA1D /* AppDelegate.swift in Sources */,
+				D510331F28270B7200CF99AA /* AccountCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
