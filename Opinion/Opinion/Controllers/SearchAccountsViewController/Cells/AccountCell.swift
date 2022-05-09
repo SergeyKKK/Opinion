@@ -16,7 +16,4 @@ class AccountCell: UITableViewCell {
     func createAccountCell() {
         self.selectionStyle = .none
     }
-
-    
-
 }

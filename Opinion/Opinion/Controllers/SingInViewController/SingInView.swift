@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SingInView {
+final class SingInView {
     
     //MARK: - Public properties
     

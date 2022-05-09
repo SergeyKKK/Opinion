@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SearchAccountsView {
+final class SearchAccountsView {
     
     //MARK: - Public properties
     
@@ -16,16 +16,16 @@ class SearchAccountsView {
     
     //MARK: - setup UI
     
-    func createNavControll(_ navControll: UIViewController, searchBar: UISearchController) {
-        navControll.navigationItem.title = "Account"
-        navControll.navigationItem.hidesBackButton = true
-        navControll.navigationController?.navigationBar.prefersLargeTitles = true
-        navControll.navigationItem.searchController = searchBar
+    func createNavigationController(_ navigationController: UIViewController, searchController: UISearchController) {
+        navigationController.navigationItem.title = "Account"
+        navigationController.navigationItem.hidesBackButton = true
+        navigationController.navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController.navigationItem.searchController = searchController
     }
     
-    func createAccountsTable(_ accountsTable: UITableView) {
-        accountsTable.keyboardDismissMode = .onDrag
-        accountsTable.snp.makeConstraints { make in
+    func createAccountsTable(_ tableView: UITableView) {
+        tableView.keyboardDismissMode = .onDrag
+        tableView.snp.makeConstraints { make in
             make.top.equalTo(UISearchBar())
             make.bottom.equalToSuperview()
             make.left.equalToSuperview()

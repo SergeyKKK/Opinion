@@ -10,7 +10,6 @@ import ConfettiView
 
 final class WelcomeViewController: UIViewController {
     
-    
     //MARK: - Properties
     
     private let welcomeView = WelcomeView.shared

@@ -29,6 +29,7 @@
 		D510331628245F0D00CF99AA /* SearchAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D510331528245F0D00CF99AA /* SearchAccountsViewController.swift */; };
 		D51033192824608500CF99AA /* SearchAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51033182824608500CF99AA /* SearchAccountsView.swift */; };
 		D510331F28270B7200CF99AA /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D510331E28270B7200CF99AA /* AccountCell.swift */; };
+		D51033232829963C00CF99AA /* UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51033222829963C00CF99AA /* UITableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		D510331528245F0D00CF99AA /* SearchAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAccountsViewController.swift; sourceTree = "<group>"; };
 		D51033182824608500CF99AA /* SearchAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAccountsView.swift; sourceTree = "<group>"; };
 		D510331E28270B7200CF99AA /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		D51033222829963C00CF99AA /* UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDelegate.swift; sourceTree = "<group>"; };
 		EA1F3EDAEADF10D889DCF5CC /* Pods-Opinion-OpinionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Opinion-OpinionUITests.release.xcconfig"; path = "Target Support Files/Pods-Opinion-OpinionUITests/Pods-Opinion-OpinionUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -270,6 +272,7 @@
 		D51033172824603D00CF99AA /* SearchAccountsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D5103321282995D500CF99AA /* Extension */,
 				D510331528245F0D00CF99AA /* SearchAccountsViewController.swift */,
 				D51033182824608500CF99AA /* SearchAccountsView.swift */,
 				D510332028270E2700CF99AA /* Cells */,
@@ -283,6 +286,14 @@
 				D510331E28270B7200CF99AA /* AccountCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D5103321282995D500CF99AA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D51033222829963C00CF99AA /* UITableViewDelegate.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +538,7 @@
 				0CE160BB2812C96A000DAA1D /* WelcomeViewController.swift in Sources */,
 				0C2FDF6E28133C6C00B96A22 /* RoolsView.swift in Sources */,
 				0CDBEF892812DAC8002899B3 /* UIViewController.swift in Sources */,
+				D51033232829963C00CF99AA /* UITableViewDelegate.swift in Sources */,
 				0CFA45FC2816AC4900101854 /* EntranceViewController.swift in Sources */,
 				0CFA45F92815EEB600101854 /* WelcomeView.swift in Sources */,
 				D510331628245F0D00CF99AA /* SearchAccountsViewController.swift in Sources */,

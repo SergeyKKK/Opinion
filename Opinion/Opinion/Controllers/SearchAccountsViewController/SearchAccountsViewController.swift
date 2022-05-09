@@ -7,11 +7,11 @@
 
 import UIKit
 
-class SearchAccountsViewController: UIViewController {
+final class SearchAccountsViewController: UIViewController {
     
     //MARK: - Properties
     
-    private let searchView = SearchAccountsView.shared
+    private let searchAccountView = SearchAccountsView.shared
     
     private lazy var accountsTableView = UITableView()
     private lazy var searchAccountsController = UISearchController()
@@ -26,34 +26,15 @@ class SearchAccountsViewController: UIViewController {
     //MARK: - Private methods
     
     private func createNavControll() {
-        searchView.createNavControll(self, searchBar: searchAccountsController)
+        searchAccountView.createNavigationController(self, searchController: searchAccountsController)
         
     }
     
-    private func setUpAccountTable(_ table: UITableView) {
-        view.addSubview(table)
-        table.register(AccountCell.self, forCellReuseIdentifier: AccountCell().identefireCell)
-        table.dataSource = self
-        table.delegate = self
-        searchView.createAccountsTable(table)
+    private func setUpAccountTable(_ tableView: UITableView) {
+        view.addSubview(tableView)
+        tableView.register(AccountCell.self, forCellReuseIdentifier: AccountCell().identefireCell)
+        tableView.dataSource = self
+        tableView.delegate = self
+        searchAccountView.createAccountsTable(tableView)
     }
-    
-}
-
-//MARK: - UITableViewDataSource, UITableViewDelegate
-
-extension SearchAccountsViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: AccountCell().identefireCell, for: indexPath) as? AccountCell{
-            cell.createAccountCell()
-            return cell
-        }
-        return UITableViewCell()
-    }
-    
-    
 }
