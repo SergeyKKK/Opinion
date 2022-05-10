@@ -16,10 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let welcomeViewController = WelcomeViewController()
+        let navigationController = UINavigationController(rootViewController: welcomeViewController)
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = welcomeViewController
+        window?.rootViewController = navigationController
         window?.overrideUserInterfaceStyle = .light
+        window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
         return true

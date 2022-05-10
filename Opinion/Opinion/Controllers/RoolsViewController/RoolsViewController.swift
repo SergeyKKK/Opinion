@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RoolsViewController: UIViewController {
+final class RoolsViewController: UIViewController {
     
     //MARK: - Properties
     

@@ -20,6 +20,7 @@ final class SingInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         
         setupEntranceButton(entranceButton)
         setupShowRoolsButton(showRoolsButton)
@@ -55,8 +56,7 @@ final class SingInViewController: UIViewController {
     
     @objc private func openEnteranceView() {
         let entranceViewController = EntranceViewController()
-        entranceViewController.modalPresentationStyle = .fullScreen
-        present(entranceViewController, animated: true)
+        navigationController?.pushViewController(entranceViewController, animated: true)
     }
 }
 
