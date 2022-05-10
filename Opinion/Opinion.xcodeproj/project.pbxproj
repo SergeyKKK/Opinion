@@ -218,12 +218,12 @@
 		0CE160E92812CAF3000DAA1D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D51033172824603D00CF99AA /* SearchAccountsViewController */,
 				0CE160E72812CAD8000DAA1D /* Launch */,
-				0CFA45F72815EE9700101854 /* WelcomeViewController */,
-				0CDBEF812812D98D002899B3 /* SingInViewController */,
-				0C2FDF6A28133C3D00B96A22 /* RoolsViewController */,
 				0CFA45FA2816AB1C00101854 /* EntranceViewController */,
+				0C2FDF6A28133C3D00B96A22 /* RoolsViewController */,
+				D51033172824603D00CF99AA /* SearchAccountsViewController */,
+				0CDBEF812812D98D002899B3 /* SingInViewController */,
+				0CFA45F72815EE9700101854 /* WelcomeViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

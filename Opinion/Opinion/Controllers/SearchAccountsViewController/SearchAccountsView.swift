@@ -23,7 +23,7 @@ final class SearchAccountsView {
         navigationController.navigationItem.searchController = searchController
     }
     
-    func createAccountsTable(_ tableView: UITableView) {
+    func createAccountsTableView(_ tableView: UITableView) {
         tableView.keyboardDismissMode = .onDrag
         tableView.snp.makeConstraints { make in
             make.top.equalTo(UISearchBar())
@@ -32,6 +32,5 @@ final class SearchAccountsView {
             make.right.equalToSuperview()
         }
     }
-    
 }
 

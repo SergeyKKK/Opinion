@@ -36,5 +36,4 @@ final class EntranceViewController: UIViewController {
         let searchAccountsViewController = SearchAccountsViewController()
         navigationController?.pushViewController(searchAccountsViewController, animated: true)
     }
-    
 }

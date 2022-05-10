@@ -8,6 +8,7 @@
 import UIKit
 
 extension SearchAccountsViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }

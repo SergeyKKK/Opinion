@@ -11,30 +11,28 @@ final class SearchAccountsViewController: UIViewController {
     
     //MARK: - Properties
     
-    private let searchAccountView = SearchAccountsView.shared
+    private let searchAccountsView = SearchAccountsView.shared
     
     private lazy var accountsTableView = UITableView()
     private lazy var searchAccountsController = UISearchController()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpAccountTable(accountsTableView)
-        createNavControll()
+        setUpAccountTableView(accountsTableView)
+        setUpNavigationControll()
     }
     
     //MARK: - Private methods
     
-    private func createNavControll() {
-        searchAccountView.createNavigationController(self, searchController: searchAccountsController)
-        
+    private func setUpNavigationControll() {
+        searchAccountsView.createNavigationController(self, searchController: searchAccountsController)
     }
     
-    private func setUpAccountTable(_ tableView: UITableView) {
+    private func setUpAccountTableView(_ tableView: UITableView) {
         view.addSubview(tableView)
         tableView.register(AccountCell.self, forCellReuseIdentifier: AccountCell().identefireCell)
         tableView.dataSource = self
         tableView.delegate = self
-        searchAccountView.createAccountsTable(tableView)
+        searchAccountsView.createAccountsTableView(tableView)
     }
 }
