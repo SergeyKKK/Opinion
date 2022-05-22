@@ -30,6 +30,7 @@
 		D51033192824608500CF99AA /* SearchAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51033182824608500CF99AA /* SearchAccountsView.swift */; };
 		D510331F28270B7200CF99AA /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D510331E28270B7200CF99AA /* AccountCell.swift */; };
 		D51033232829963C00CF99AA /* UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51033222829963C00CF99AA /* UITableViewDelegate.swift */; };
+		D5103325282C4DF200CF99AA /* AccountCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5103324282C4DF200CF99AA /* AccountCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		D51033182824608500CF99AA /* SearchAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAccountsView.swift; sourceTree = "<group>"; };
 		D510331E28270B7200CF99AA /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		D51033222829963C00CF99AA /* UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDelegate.swift; sourceTree = "<group>"; };
+		D5103324282C4DF200CF99AA /* AccountCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCellView.swift; sourceTree = "<group>"; };
 		EA1F3EDAEADF10D889DCF5CC /* Pods-Opinion-OpinionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Opinion-OpinionUITests.release.xcconfig"; path = "Target Support Files/Pods-Opinion-OpinionUITests/Pods-Opinion-OpinionUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				D510331E28270B7200CF99AA /* AccountCell.swift */,
+				D5103324282C4DF200CF99AA /* AccountCellView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 				0CFA45FC2816AC4900101854 /* EntranceViewController.swift in Sources */,
 				0CFA45F92815EEB600101854 /* WelcomeView.swift in Sources */,
 				D510331628245F0D00CF99AA /* SearchAccountsViewController.swift in Sources */,
+				D5103325282C4DF200CF99AA /* AccountCellView.swift in Sources */,
 				0CFA45FE2816AC6000101854 /* EntranceView.swift in Sources */,
 				0C2FDF692812F30E00B96A22 /* SingInView.swift in Sources */,
 				0C2FDF6C28133C5F00B96A22 /* RoolsViewController.swift in Sources */,

@@ -25,6 +25,7 @@ final class SearchAccountsView {
     
     func createAccountsTableView(_ tableView: UITableView) {
         tableView.keyboardDismissMode = .onDrag
+        tableView.separatorStyle = .none
         tableView.snp.makeConstraints { make in
             make.top.equalTo(UISearchBar())
             make.bottom.equalToSuperview()
