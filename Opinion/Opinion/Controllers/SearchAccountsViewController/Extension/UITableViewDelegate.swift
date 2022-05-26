@@ -15,9 +15,14 @@ extension SearchAccountsViewController: UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: AccountCell().identefireCell, for: indexPath) as? AccountCell {
-            cell.createAccountCell()
+            cell.setUpAccountCell()
             return cell
         }
         return UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+
 }
